@@ -1,0 +1,108 @@
+--------------------------------------------------------
+7/5/2020 12:17:04 p. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2020-05-05T13:16:55Z HASTA 2020-05-05T15:16:55Z (HORARIO UTC)
+
+    ERROR guardando en base de datos la sesión id:5eb17f11a548e70cec489667, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: Pronto(6), IdMoroso: 38283541(8)
+    ERROR guardando en base de datos la sesión id:5eb16b47a548e70cec45016e, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: Pronto(6), IdMoroso: 42689692(8)
+    ERROR guardando en base de datos la sesión id:5eb17e2da548e70cec486b19, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: Microfin(8), IdMoroso: 54838233(8)
+    ERROR guardando en base de datos la sesión id:5eb182daa548e70cec494d4b, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: Pronto(6), IdMoroso: 57964253(8)
+
+--------------------------------------------------------
+7/5/2020 12:18:39 p. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2020-05-05T13:18:31Z HASTA 2020-05-05T15:18:31Z (HORARIO UTC)
+
+SESION INGRESADA OK: 5eb17f11a548e70cec489667
+SESION INGRESADA OK: 5eb16b47a548e70cec45016e
+SESION INGRESADA OK: 5eb17e2da548e70cec486b19
+SESION INGRESADA OK: 5eb182daa548e70cec494d4b
+
+--------------------------------------------------------
+13/11/2020 12:11:04 p. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2020-11-13T13:11:03Z HASTA 2020-11-13T15:11:03Z (HORARIO UTC)
+
+--------------------------------------------------------
+19/11/2020 9:22:10 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2020-11-19T10:22:05Z HASTA 2020-11-19T12:22:05Z (HORARIO UTC)
+
+--------------------------------------------------------
+15/10/2021 10:55:37 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T11:55:33Z HASTA 2021-10-15T13:55:33Z (HORARIO UTC)
+
+--------------------------------------------------------
+15/10/2021 11:02:36 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T13:02:23Z HASTA 2021-10-15T14:05:23Z (HORARIO UTC)
+
+--------------------------------------------------------
+15/10/2021 11:20:07 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T12:20:05Z HASTA 2021-10-15T14:20:05Z (HORARIO UTC)
+
+--------------------------------------------------------
+15/10/2021 11:21:43 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T12:21:41Z HASTA 2021-10-15T14:21:41Z (HORARIO UTC)
+
+--------------------------------------------------------
+15/10/2021 11:24:41 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T12:24:40Z HASTA 2021-10-15T14:24:40Z (HORARIO UTC)
+
+--------------------------------------------------------
+15/10/2021 11:25:46 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T12:25:45Z HASTA 2021-10-15T14:25:45Z (HORARIO UTC)
+
+--------------------------------------------------------
+15/10/2021 11:27:21 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T12:27:17Z HASTA 2021-10-15T14:27:17Z (HORARIO UTC)
+
+--------------------------------------------------------
+15/10/2021 11:28:35 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T12:28:33Z HASTA 2021-10-15T14:28:33Z (HORARIO UTC)
+
+--------------------------------------------------------
+18/10/2021 11:56:13 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T12:56:04Z HASTA 2021-10-15T14:56:04Z (HORARIO UTC)
+
+    ERROR guardando en base de datos la sesión id:616989e4827b1a37030c47d3, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: NBC_FABRALER(12), IdMoroso: 10683545(8)
+    ERROR guardando en base de datos la sesión id:616988673ebbaf36e7da446b, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: CREDITEL(8), IdMoroso: 48618007(8)
+INSERT LLAMADA CON ERROR: 6169849957af5236fc284f96  MOROSO:31393737  CLIENTE:CREDITON   ERROR: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+    ERROR guardando en base de datos la sesión id:6169849957af5236fc284f96, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: CREDITON(8), IdMoroso: 31393737(8)
+    ERROR guardando en base de datos la sesión id:61698d87d05a2037182de437, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: OCA(3), IdMoroso: 4505627(7)
+    ERROR guardando en base de datos la sesión id:61699327a3a3c836ee5efd5b, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: CREDITON(8), IdMoroso: 31815189(8)
+    ERROR guardando en base de datos la sesión id:61698888a3a3c836ee5ebb33, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: PRONTO(6), IdMoroso: 4992080-1(9)
+INSERT LLAMADA CON ERROR: 616984a5d05a2037182dacbe  MOROSO:37735236  CLIENTE:CREDITON   ERROR: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+    ERROR guardando en base de datos la sesión id:616984a5d05a2037182dacbe, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: CREDITON(8), IdMoroso: 37735236(8)
+INSERT LLAMADA CON ERROR: 616985e9a3a3c836ee5eabd1  MOROSO:5579183-4  CLIENTE:PRONTO   ERROR: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+    ERROR guardando en base de datos la sesión id:616985e9a3a3c836ee5eabd1, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: PRONTO(6), IdMoroso: 5579183-4(9)
+    ERROR guardando en base de datos la sesión id:616981c0827b1a37030c164f, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: PRONTO(6), IdMoroso: 3290801-2(9)
+INSERT LLAMADA CON ERROR: 61697bf9a3a3c836ee5e7131  MOROSO:41120023  CLIENTE:CREDITON   ERROR: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+    ERROR guardando en base de datos la sesión id:61697bf9a3a3c836ee5e7131, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: CREDITON(8), IdMoroso: 41120023(8)
+    ERROR guardando en base de datos la sesión id:61698e78d05a2037182dea13, Error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified). IdCliente: PRONTO(6), IdMoroso: 3179736-1(9)
+
+--------------------------------------------------------
+18/10/2021 11:58:43 a. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T12:58:35Z HASTA 2021-10-15T14:58:35Z (HORARIO UTC)
+
+SESION INGRESADA OK: 616989e4827b1a37030c47d3  MOROSO:10683545  CLIENTE:NBC_FABRALER
+SESION INGRESADA OK: 616988673ebbaf36e7da446b  MOROSO:48618007  CLIENTE:CREDITEL
+LLAMADA INSERTADA OK: 6169849957af5236fc284f96  MOROSO:31393737  CLIENTE:CREDITON
+    ERROR guardando en base de datos la sesión id:6169849957af5236fc284f96, Error: Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK__LLAMADA__IDMOROS__004E1D4D". El conflicto ha aparecido en la base de datos "ACTIVE", tabla "dbo.MOROSO", column 'IDMOROSO'.
+Se terminó la instrucción.. IdCliente: CREDITON(8), IdMoroso: 31393737(8)
+SESION INGRESADA OK: 61698d87d05a2037182de437  MOROSO:4505627  CLIENTE:OCA
+SESION INGRESADA OK: 61699327a3a3c836ee5efd5b  MOROSO:31815189  CLIENTE:CREDITON
+SESION INGRESADA OK: 61698888a3a3c836ee5ebb33  MOROSO:4992080-1  CLIENTE:PRONTO
+LLAMADA INSERTADA OK: 616984a5d05a2037182dacbe  MOROSO:37735236  CLIENTE:CREDITON
+SESION INGRESADA OK: 616984a5d05a2037182dacbe  MOROSO:37735236  CLIENTE:CREDITON
+LLAMADA INSERTADA OK: 616985e9a3a3c836ee5eabd1  MOROSO:5579183-4  CLIENTE:PRONTO
+    ERROR guardando en base de datos la sesión id:616985e9a3a3c836ee5eabd1, Error: Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK__LLAMADA__IDMOROS__004E1D4D". El conflicto ha aparecido en la base de datos "ACTIVE", tabla "dbo.MOROSO", column 'IDMOROSO'.
+Se terminó la instrucción.. IdCliente: PRONTO(6), IdMoroso: 5579183-4(9)
+SESION INGRESADA OK: 616981c0827b1a37030c164f  MOROSO:3290801-2  CLIENTE:PRONTO
+LLAMADA INSERTADA OK: 61697bf9a3a3c836ee5e7131  MOROSO:41120023  CLIENTE:CREDITON
+SESION INGRESADA OK: 61697bf9a3a3c836ee5e7131  MOROSO:41120023  CLIENTE:CREDITON
+SESION INGRESADA OK: 61698e78d05a2037182dea13  MOROSO:3179736-1  CLIENTE:PRONTO
+
+--------------------------------------------------------
+18/10/2021 12:03:42 p. m.  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2021-10-15T13:03:32Z HASTA 2021-10-15T15:03:32Z (HORARIO UTC)
+
+--------------------------------------------------------
+30/6/2022 11:11:23  INICIANDO PROCESO MANUAL.
+SOLICITANDO SESIONES A HEYNOW DESDE 2022-06-30T12:11:14Z HASTA 2022-06-30T14:11:14Z (HORARIO UTC)
+

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 19.875, 13.25" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8750a0f1-82bf-46fb-973d-90062b11d50a" absoluteBounds="0.75, 1.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DataClassesDataContext/HEYNOW_WA_SESSION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d47285a5-386a-4dd1-9c2e-11bcb27c973a" absoluteBounds="0.76499999999999968, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dbd6deac-9930-4a42-9a99-1c59f5845a53" absoluteBounds="3.625, 1.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/DataClassesDataContext/HEYNOW_WA_SESSION_MESSAGE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8ca00b9-96b8-4e2d-9d60-44ed3aa7b50f" absoluteBounds="3.6400000000000006, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.10659912109375); (3.625 : 2.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/HEYNOW_WA_SESSION/HEYNOW_WA_SESSION_HEYNOW_WA_SESSION_MESSAGE" />
+      <nodes>
+        <classShapeMoniker Id="8750a0f1-82bf-46fb-973d-90062b11d50a" />
+        <classShapeMoniker Id="dbd6deac-9930-4a42-9a99-1c59f5845a53" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7d7093a9-0145-4682-acad-e99926eee869" absoluteBounds="0.75, 4.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/HEYNOW_SESSION_LOG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="084feed2-6193-4605-913a-8fb1b3537d92" absoluteBounds="0.76499999999999968, 4.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="91ef4a07-a822-4b2a-bea9-60008a424dea" absoluteBounds="6.75, 1.125, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/DataClassesDataContext/LLAMADA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1ef8284-49ea-4cf2-8f2f-3b0c6de57fa0" absoluteBounds="6.7650000000000006, 1.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c144bfb-f34c-4499-a601-7e0175f59124" absoluteBounds="3.5, 4.125, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/DataClassesDataContext/CARTERA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66687d07-4e77-41a0-a9a4-1057e92fa2c4" absoluteBounds="3.5149999999999997, 4.5850000000000009, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="afbfb01b-b1d6-498f-86ce-dd8e3ee5d92b" absoluteBounds="13.875, 6.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58c1afe2-e2db-44e2-aab9-d259c4dc6642" absoluteBounds="13.89, 6.8350000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3eb28a1f-8a12-4beb-a99b-b2d44667daa6" absoluteBounds="14, 11.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT_CATEGORIZACION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7bbff536-1271-4cce-ad0d-7a812b2af6fc" absoluteBounds="14.015, 11.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac7ae61c-5fc8-423d-83ca-84dac2600273" absoluteBounds="17.625, 7.125, 2, 3.5016097005208318">
+      <DataClassMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT_MESSAGE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d3d37fe-1ad2-4e5a-a87b-da18138779e1" absoluteBounds="17.64, 7.585, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b7ff1800-c7c5-4421-ad79-11c303e150d6" absoluteBounds="6.5, 9.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT_RESOLUCION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a0bb39b-7fa2-48d2-a1b1-2a0683b988f7" absoluteBounds="6.5150000000000006, 10.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.9375 : 11.25); (14.9375 : 8.72280110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT_CATEGORIZACION/ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_CHATAPI_CHAT" />
+      <nodes>
+        <classShapeMoniker Id="3eb28a1f-8a12-4beb-a99b-b2d44667daa6" />
+        <classShapeMoniker Id="afbfb01b-b1d6-498f-86ce-dd8e3ee5d92b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.875 : 7.92390055338542); (17.625 : 7.92390055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT/ACT_CHATAPI_CHAT_ACT_CHATAPI_CHAT_MESSAGE" />
+      <nodes>
+        <classShapeMoniker Id="afbfb01b-b1d6-498f-86ce-dd8e3ee5d92b" />
+        <classShapeMoniker Id="ac7ae61c-5fc8-423d-83ca-84dac2600273" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 9.875); (7.5 : 6.96875); (13.875 : 6.96875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT_RESOLUCION/ACT_CHATAPI_CHAT_RESOLUCION_ACT_CHATAPI_CHAT" />
+      <nodes>
+        <classShapeMoniker Id="b7ff1800-c7c5-4421-ad79-11c303e150d6" />
+        <classShapeMoniker Id="afbfb01b-b1d6-498f-86ce-dd8e3ee5d92b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.5000025 : 11.25); (15.5000025 : 10.03125); (15.0208333333333 : 10.03125 : JumpStart); (14.8541666666667 : 10.03125 : JumpEnd); (11.4583333333333 : 10.03125 : JumpStart); (11.2916666666667 : 10.03125 : JumpEnd); (8.5 : 10.03125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT_CATEGORIZACION/ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_CHATAPI_CHAT_RESOLUCION" />
+      <nodes>
+        <classShapeMoniker Id="3eb28a1f-8a12-4beb-a99b-b2d44667daa6" />
+        <classShapeMoniker Id="b7ff1800-c7c5-4421-ad79-11c303e150d6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="299539f2-bb24-476b-8017-beffb689766f" absoluteBounds="9.75, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DataClassesDataContext/ACT_WHATSAPP_CAMPANIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa6ce5af-7f04-4d71-89c4-2fe6e25ceec5" absoluteBounds="9.765, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52ba44cd-a245-48aa-9941-23ec1f012c24" absoluteBounds="12.5, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DataClassesDataContext/ACT_WHATSAPP_CAMPANIA_ITEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25bd5102-5dc2-4128-bb7f-7faa28893289" absoluteBounds="12.515, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43225032-0892-4708-a502-4f5ce6c0f826" absoluteBounds="9.625, 7.625, 3, 1.3862939453124987">
+      <DataClassMoniker Name="/DataClassesDataContext/ACT_WHATSAPP_CONTACTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e11c6548-120a-4df9-bf50-e317a7c83bdd" absoluteBounds="9.64, 8.085, 2.9699999999999998, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11.75 : 2.27005126953125); (12.5 : 2.27005126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_WHATSAPP_CAMPANIA/ACT_WHATSAPP_CAMPANIA_ACT_WHATSAPP_CAMPANIA_ITEM" />
+      <nodes>
+        <classShapeMoniker Id="299539f2-bb24-476b-8017-beffb689766f" />
+        <classShapeMoniker Id="52ba44cd-a245-48aa-9941-23ec1f012c24" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.625 : 8.17390055338542); (13.875 : 8.17390055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_WHATSAPP_CONTACTO/ACT_WHATSAPP_CONTACTO_ACT_CHATAPI_CHAT" />
+      <nodes>
+        <classShapeMoniker Id="43225032-0892-4708-a502-4f5ce6c0f826" />
+        <classShapeMoniker Id="afbfb01b-b1d6-498f-86ce-dd8e3ee5d92b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="bbb0b2bd-170d-4f03-8b55-7566a37e2ac2" absoluteBounds="10.375, 10.25, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClassesDataContext/ACT_WHATSAPP_GESTION_DE_CHAT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60b73f4a-e43e-4c5b-a702-20147ced45ad" absoluteBounds="10.39, 10.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14 : 11.9431469726562); (12.375 : 11.9431469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT_CATEGORIZACION/ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_WHATSAPP_GESTION_DE_CHAT" />
+      <nodes>
+        <classShapeMoniker Id="3eb28a1f-8a12-4beb-a99b-b2d44667daa6" />
+        <classShapeMoniker Id="bbb0b2bd-170d-4f03-8b55-7566a37e2ac2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 10.8517976888021); (10.375 : 10.8517976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_CHATAPI_CHAT_RESOLUCION/ACT_CHATAPI_CHAT_RESOLUCION_ACT_WHATSAPP_GESTION_DE_CHAT" />
+      <nodes>
+        <classShapeMoniker Id="b7ff1800-c7c5-4421-ad79-11c303e150d6" />
+        <classShapeMoniker Id="bbb0b2bd-170d-4f03-8b55-7566a37e2ac2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.375 : 9.0112939453125); (11.375 : 10.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/ACT_WHATSAPP_CONTACTO/ACT_WHATSAPP_CONTACTO_ACT_WHATSAPP_GESTION_DE_CHAT" />
+      <nodes>
+        <classShapeMoniker Id="43225032-0892-4708-a502-4f5ce6c0f826" />
+        <classShapeMoniker Id="bbb0b2bd-170d-4f03-8b55-7566a37e2ac2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

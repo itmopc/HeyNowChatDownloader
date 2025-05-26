@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Active" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.212.30\MSSQLTESTING;Initial Catalog=Active;Persist Security Info=True;User ID=jtierno" SettingsObjectName="EmailDownloader.Properties.Settings" SettingsPropertyName="ActiveConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.HEYNOW_WA_SESSION" Member="HEYNOW_WA_SESSIONs">
+    <Type Name="HEYNOW_WA_SESSION">
+      <Column Name="SESSIONID" Type="System.String" DbType="VarChar(500) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDMOROSO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IDCLIENTE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TELEFONO" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="SESSION_END" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SESSION_BEGIN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AGENTNAME" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="NOMBRE_MOROSO" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="IDAGENT" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="HEYNOW_WA_SESSION_HEYNOW_WA_SESSION_MESSAGE" Member="HEYNOW_WA_SESSION_MESSAGEs" ThisKey="SESSIONID" OtherKey="SESSIONID" Type="HEYNOW_WA_SESSION_MESSAGE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HEYNOW_WA_SESSION_MESSAGE" Member="HEYNOW_WA_SESSION_MESSAGEs">
+    <Type Name="HEYNOW_WA_SESSION_MESSAGE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SESSIONID" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="FECHA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="INCOMING" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MENSAJE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDAGENT" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="HEYNOW_WA_SESSION_HEYNOW_WA_SESSION_MESSAGE" Member="HEYNOW_WA_SESSION" ThisKey="SESSIONID" OtherKey="SESSIONID" Type="HEYNOW_WA_SESSION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HEYNOW_SESSION_LOG" Member="HEYNOW_SESSION_LOGs">
+    <Type Name="HEYNOW_SESSION_LOG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SESSION_END" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SESSION_BEGIN" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LOGTEXT" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LLAMADA" Member="LLAMADAs">
+    <Type Name="LLAMADA">
+      <Column Name="IDMOROSO" Type="System.String" DbType="Char(18) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDCLIENTE" Type="System.String" DbType="Char(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDOPERADOR" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FECHA" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HORA" Type="System.String" DbType="Char(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TIPO" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="DURACION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ESTADOINICIAL" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="ESTADOFINAL" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="CONTACTO" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="DIALED" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="RESULTADO" Type="System.String" DbType="Char(40)" CanBeNull="true" />
+      <Column Name="COMENTARIO" Type="System.String" DbType="Char(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CARTERA" Member="CARTERAs">
+    <Type Name="CARTERA">
+      <Column Name="IDMOROSO" Type="System.String" DbType="Char(18) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDCLIENTE" Type="System.String" DbType="Char(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ESTADO" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="IDOPERADOR" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="IDSUPERVISOR" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="LLAMADAS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FCOMPROMISO1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MONTOCOMPROMISO1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="FCOMPROMISO2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MONTOCOMPROMISO2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="FCOMPROMISO3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MONTOCOMPROMISO3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MORADESDE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FINGRESO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FASIGNACION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ACTIVO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FILTROA" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="FILTROB" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="WORKSTATUS" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACT_CHATAPI_CHAT" Member="ACT_CHATAPI_CHATs">
+    <Type Name="ACT_CHATAPI_CHAT">
+      <Column Name="Id" Type="System.String" DbType="VarChar(500) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="LineaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdOperador" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ResolucionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CategorizacionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContactoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ACT_CHATAPI_CHAT_ACT_CHATAPI_CHAT_MESSAGE" Member="ACT_CHATAPI_CHAT_MESSAGEs" ThisKey="Id,LineaId" OtherKey="ChatId,LineaId" Type="ACT_CHATAPI_CHAT_MESSAGE" />
+      <Association Name="ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_CHATAPI_CHAT" Member="ACT_CHATAPI_CHAT_CATEGORIZACION" ThisKey="CategorizacionId" OtherKey="Id" Type="ACT_CHATAPI_CHAT_CATEGORIZACION" IsForeignKey="true" />
+      <Association Name="ACT_CHATAPI_CHAT_RESOLUCION_ACT_CHATAPI_CHAT" Member="ACT_CHATAPI_CHAT_RESOLUCION" ThisKey="ResolucionId" OtherKey="Id" Type="ACT_CHATAPI_CHAT_RESOLUCION" IsForeignKey="true" />
+      <Association Name="ACT_WHATSAPP_CONTACTO_ACT_CHATAPI_CHAT" Member="ACT_WHATSAPP_CONTACTO" ThisKey="ContactoId" OtherKey="Id" Type="ACT_WHATSAPP_CONTACTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACT_CHATAPI_CHAT_CATEGORIZACION" Member="ACT_CHATAPI_CHAT_CATEGORIZACIONs">
+    <Type Name="ACT_CHATAPI_CHAT_CATEGORIZACION">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_CHATAPI_CHAT" Member="ACT_CHATAPI_CHATs" ThisKey="Id" OtherKey="CategorizacionId" Type="ACT_CHATAPI_CHAT" />
+      <Association Name="ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_CHATAPI_CHAT_RESOLUCION" Member="ACT_CHATAPI_CHAT_RESOLUCIONs" ThisKey="Id" OtherKey="CategorizacionId" Type="ACT_CHATAPI_CHAT_RESOLUCION" />
+      <Association Name="ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_WHATSAPP_GESTION_DE_CHAT" Member="ACT_WHATSAPP_GESTION_DE_CHATs" ThisKey="Id" OtherKey="CategorizacionId" Type="ACT_WHATSAPP_GESTION_DE_CHAT" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACT_CHATAPI_CHAT_MESSAGES" Member="ACT_CHATAPI_CHAT_MESSAGEs">
+    <Type Name="ACT_CHATAPI_CHAT_MESSAGE">
+      <Column Name="Id" Type="System.String" DbType="VarChar(500) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Body" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SenderName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FromMe" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Author" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ChatId" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="MessageNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Viewed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Delivered" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FechaHoraEnvio_Active" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastMessageNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LineaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ACT_CHATAPI_CHAT_ACT_CHATAPI_CHAT_MESSAGE" Member="ACT_CHATAPI_CHAT" ThisKey="ChatId,LineaId" OtherKey="Id,LineaId" Type="ACT_CHATAPI_CHAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACT_CHATAPI_CHAT_RESOLUCION" Member="ACT_CHATAPI_CHAT_RESOLUCIONs">
+    <Type Name="ACT_CHATAPI_CHAT_RESOLUCION">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CategorizacionId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ACT_CHATAPI_CHAT_RESOLUCION_ACT_CHATAPI_CHAT" Member="ACT_CHATAPI_CHATs" ThisKey="Id" OtherKey="ResolucionId" Type="ACT_CHATAPI_CHAT" />
+      <Association Name="ACT_CHATAPI_CHAT_RESOLUCION_ACT_WHATSAPP_GESTION_DE_CHAT" Member="ACT_WHATSAPP_GESTION_DE_CHATs" ThisKey="Id" OtherKey="ResolucionId" Type="ACT_WHATSAPP_GESTION_DE_CHAT" />
+      <Association Name="ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_CHATAPI_CHAT_RESOLUCION" Member="ACT_CHATAPI_CHAT_CATEGORIZACION" ThisKey="CategorizacionId" OtherKey="Id" Type="ACT_CHATAPI_CHAT_CATEGORIZACION" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACT_WHATSAPP_CAMPANIA" Member="ACT_WHATSAPP_CAMPANIAs">
+    <Type Name="ACT_WHATSAPP_CAMPANIA">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Pausado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FechaDeCreacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioCreador" Type="System.String" DbType="Char(18) NOT NULL" CanBeNull="false" />
+      <Column Name="VigenciaDesde" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="VigenciaHasta" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TemplateId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LineaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ACT_WHATSAPP_CAMPANIA_ACT_WHATSAPP_CAMPANIA_ITEM" Member="ACT_WHATSAPP_CAMPANIA_ITEMs" ThisKey="Id" OtherKey="CampaniaId" Type="ACT_WHATSAPP_CAMPANIA_ITEM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACT_WHATSAPP_CAMPANIA_ITEM" Member="ACT_WHATSAPP_CAMPANIA_ITEMs">
+    <Type Name="ACT_WHATSAPP_CAMPANIA_ITEM">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CampaniaId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMoroso" Type="System.String" DbType="Char(18) NOT NULL" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroCelular" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Mensaje" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaDeEnvio" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Resultado" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="ACT_WHATSAPP_CAMPANIA_ACT_WHATSAPP_CAMPANIA_ITEM" Member="ACT_WHATSAPP_CAMPANIA" ThisKey="CampaniaId" OtherKey="Id" Type="ACT_WHATSAPP_CAMPANIA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACT_WHATSAPP_CONTACTO" Member="ACT_WHATSAPP_CONTACTOs">
+    <Type Name="ACT_WHATSAPP_CONTACTO">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="ACT_WHATSAPP_CONTACTO_ACT_CHATAPI_CHAT" Member="ACT_CHATAPI_CHATs" ThisKey="Id" OtherKey="ContactoId" Type="ACT_CHATAPI_CHAT" />
+      <Association Name="ACT_WHATSAPP_CONTACTO_ACT_WHATSAPP_GESTION_DE_CHAT" Member="ACT_WHATSAPP_GESTION_DE_CHATs" ThisKey="Id" OtherKey="ContactoId" Type="ACT_WHATSAPP_GESTION_DE_CHAT" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACT_WHATSAPP_GESTION_DE_CHAT" Member="ACT_WHATSAPP_GESTION_DE_CHATs">
+    <Type Name="ACT_WHATSAPP_GESTION_DE_CHAT">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FechaHora" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Fuente" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdMoroso" Type="System.String" DbType="Char(18) NOT NULL" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.String" DbType="Char(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IdOparador" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ResolucionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CategorizacionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContactoId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ACT_CHATAPI_CHAT_CATEGORIZACION_ACT_WHATSAPP_GESTION_DE_CHAT" Member="ACT_CHATAPI_CHAT_CATEGORIZACION" ThisKey="CategorizacionId" OtherKey="Id" Type="ACT_CHATAPI_CHAT_CATEGORIZACION" IsForeignKey="true" />
+      <Association Name="ACT_CHATAPI_CHAT_RESOLUCION_ACT_WHATSAPP_GESTION_DE_CHAT" Member="ACT_CHATAPI_CHAT_RESOLUCION" ThisKey="ResolucionId" OtherKey="Id" Type="ACT_CHATAPI_CHAT_RESOLUCION" IsForeignKey="true" />
+      <Association Name="ACT_WHATSAPP_CONTACTO_ACT_WHATSAPP_GESTION_DE_CHAT" Member="ACT_WHATSAPP_CONTACTO" ThisKey="ContactoId" OtherKey="Id" Type="ACT_WHATSAPP_CONTACTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
